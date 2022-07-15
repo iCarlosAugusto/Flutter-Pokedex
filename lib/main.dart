@@ -9,8 +9,15 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text("Pokedex")),
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(title: Text("Home")),
+        body: Column(children: [
+          Text("Olá!")
+        ]),
+      ),    
     );
   }
 }
+
+
