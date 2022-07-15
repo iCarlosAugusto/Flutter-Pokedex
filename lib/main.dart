@@ -13,13 +13,15 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(title: Text("Home")),
         body: Column(children: [       
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text("Texto 1"),
-              Text("Texto 2")
-            ],
-          )
+          Row(children: [
+            
+            Container(
+              margin: EdgeInsets.only(top: 20),
+              color: Colors.red,
+              width: 20,
+              height: 20
+            )
+          ], mainAxisAlignment: MainAxisAlignment.center,)
         ]),
       ),    
     );
