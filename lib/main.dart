@@ -12,8 +12,14 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(title: Text("Home")),
-        body: Column(children: [
-          Text("Olá!")
+        body: Column(children: [       
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text("Texto 1"),
+              Text("Texto 2")
+            ],
+          )
         ]),
       ),    
     );
