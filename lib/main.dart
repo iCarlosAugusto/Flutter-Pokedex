@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:study_styles_flutter/views/home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,20 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(title: Text("Home")),
-        body: Column(children: [       
-          Row(children: [
-            
-            Container(
-              margin: EdgeInsets.only(top: 20),
-              color: Colors.red,
-              width: 20,
-              height: 20
-            )
-          ], mainAxisAlignment: MainAxisAlignment.center,)
-        ]),
-      ),    
+      home: HomePage(),
     );
   }
 }
